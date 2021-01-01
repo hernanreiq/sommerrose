@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sommer Rose RD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2acc1475d8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sommer Rose</h1>
+        <h2>Sombreros personalizados pintados a mano</h2>
+        <a href="https://www.instagram.com/sommerrose_rd" target="_blank">
+            <div class="contenedor-enlace">¡Mira nuestros diseños en Instagram!<br>@sommerrose_rd <i class="fab fa-instagram"></i></div>
+        </a>
+    </header>
+    <main id="pagina-principal" style="display: block;">
+        <h3>¡Haz un pedido!</h3>
+        <p>*Cuando termines de llenar todos los datos, se te enviará a un chat en WhatsApp para coordinar el diseño que se le pintará, su costo y la forma en que quieres recibir el producto seleccionado.</p><br>
+        <label for="tipo-sombrero">Selecciona el producto:</label>
+        <select id="tipo-sombrero" name="tipo-sombrero">
+            <option value="b-corto">Sombrero de Borde Corto</option>
+            <option value="b-mediano">Sombrero de Borde Mediano</option>
+            <option value="b-grande">Sombrero de Borde Grande</option>
+            <option value="v-mediana">Visera Mediana</option>
+            <option value="v-grande">Visera Grande</option>
+            <option value="gorra">Gorra</option>
+            <option value="c-mediana">Cartera Mediana</option>
+            <option value="c-grande">Cartera Grande</option>
+        </select><br>
+        <div class="contenedor-imagen">
+            <div class="imagen-ejemplo">
+                <img src="img/b-corto.jpg" alt="Foto del tipo de sombrero" id="imagen-sombrero">
+            </div>
+        </div>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" name="cantidad" id="cantidad" value="1"><br>
+        <label for="nombre">Mi nombre es (opcional):</label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="sexo">Soy:</label>
+        <select id="sexo">
+            <option value="mujer">Mujer</option>
+            <option value="hombre">Hombre</option>
+            <option value="otro">Prefiero no decirlo</option>
+        </select><br><br>
+        <label for="regalo">Esto es:</label>
+        <select id="regalo">
+            <option value="propio">Para mi</option>
+            <option value="regalo">Un regalo</option>
+        </select><br><br>
+        <div class="contenedor-boton">
+            <button id="pedir">Hacer este pedido</button>
+        </div>
+    </main>
+    <main id="pagina-secundaria" style="display: none;">
+        <h3>INFORMACIÓN DE SU PEDIDO</h3>
+        <label>Usted ha elegido: <span id="resultado-tipo"></span></label>
+        <div class="contenedor-imagen">
+            <div class="imagen-ejemplo">
+                <img src="img/b-corto.jpg" alt="Foto del tipo de sombrero" id="resultado-imagen">
+            </div>
+        </div>
+        <label>Cantidad: <span id="resultado-cantidad"></span></label> <br><br>
+        <label>Su nombre es: <span id="resultado-nombre"></span></label> <br><br>
+        <label>Su sexo es: <span id="resultado-sexo"></span></label> <br><br>
+        <label>El producto seleccionado es: <span id="resultado-regalo"></span></label><br><br>
+        <div class="contenedor-boton">
+            <button id="cancelar" class="cancelar">Cambiar datos</button>
+            <button id="coordinar">¡Coordinar el diseño por WhatsApp <i class="fab fa-whatsapp"></i>!</button>
+        </div>
+    </main>
+    <footer>
+        Sommer Rose RD - Pintando desde el año 2017 - Todos los derechos reservados &copy;. <br><br>
+        Diseño y desarrollo web por: <a href="https://www.instagram.com/hernan.reiq" target="_blank">Hernan.Reiq</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

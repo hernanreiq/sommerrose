@@ -1,0 +1,256 @@
+html {
+    box-sizing: border-box;    
+    scroll-behavior: smooth;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(255, 118, 248);
+    width: 1000px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1000px){
+    body {
+        width: 100%;
+    }
+}
+header {
+    background-color: rgb(255, 0, 234);
+    padding-bottom: 25px;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: black 0px 0px 3px;
+}
+header h1 {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 80px;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 251, 193);
+}
+header h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Staatliches', cursive;
+    color: rgb(255, 251, 193);
+    text-shadow: black 1px 1px 1px;
+    font-weight: normal;
+}
+@media only screen and (max-width: 470px){
+    header h1 {
+        font-size: 70px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 370px){
+    header h1 {
+        font-size: 60px;
+    }
+    header h2 {
+        font-size: 17px;
+    }
+}
+header div.contenedor-enlace {
+    text-align: center;
+    background-color: rgb(255, 118, 248);
+    width: 50%;
+    border: solid black 3px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin: 0 auto;
+    animation-name: enlace_parpadeo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@media only screen and (max-width: 870px){
+    header div.contenedor-enlace {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 460px){
+    header div.contenedor-enlace {
+        width: 90%;
+    }
+}
+@keyframes enlace_parpadeo {
+    0% {
+        color:black;
+        background-color: rgb(255, 118, 248);
+    }
+    50% {
+        border: solid rgb(255, 118, 248) 3px;
+        color: rgb(255, 118, 248);
+        background-color:black;
+    }
+}
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: black 1px 1px 1px;
+    font-weight: bold;
+    color: black;
+}
+@media only screen and (max-width: 870px){
+    header a {
+        font-size: 16px;
+    }
+}
+main {
+    margin: 25px 0px;
+    padding: 25px 20px;
+    background-color:  rgb(255, 0, 234);
+    border-radius: 25px;
+    box-shadow: black 0px 0px 3px;
+}
+#pagina-secundaria {
+    background-color: rgb(100, 141, 255);
+}
+main p {
+    color: white;
+    text-align: justify;
+}
+main h3 {
+    color: rgb(255, 251, 193);
+    text-shadow: black 1px 1px 1px;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+label {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(255, 251, 193);
+    text-shadow: black 1px 1px 1px;
+}
+div.contenedor-imagen {
+    margin: 20px 0px;
+}
+div.imagen-ejemplo {
+    margin: 0 auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+div.imagen-ejemplo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: black 3px 3px 3px;
+    border: solid 1px black;
+}
+input {
+    margin-bottom: 18px;
+    font-size: 18px;
+    padding: 0px 5px;
+    font-family: 'Noto Sans', sans-serif;
+}
+select {
+    font-size: 18px;
+    padding: 0px 5px;
+    font-family: 'Noto Sans', sans-serif;
+}
+@media only screen and (max-width: 450px){
+    select {
+        font-size: 16px;
+    }
+    input {
+        font-size: 16px;
+    }
+    label {
+        font-size: 16px;
+    }
+}
+div.contenedor-boton {
+    margin: 0 auto;
+    width: 40%;
+}
+button {
+    width: 100%;
+    font-size: 20px;
+    padding: 15px 0px;
+    border: solid 3px black;
+    font-weight: bold;
+    background-color:#25D366;
+    border-radius: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+@media only screen and (max-width: 999px){
+    div.contenedor-boton {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 700px){
+    div.contenedor-boton {
+        width: 70%;
+    }
+    button {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 500px){
+    div.contenedor-boton {
+        width: 80%;
+    }
+    button {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 400px){
+    div.contenedor-boton {
+        width: 100%;
+    }
+    button {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 300px){
+    div.contenedor-boton {
+        width: 100%;
+    }
+    button {
+        font-size: 12px;
+    }
+}
+.cancelar {
+    margin-bottom: 20px;
+    background-color: rgb(255, 108, 108);
+}
+.cancelar:hover {
+    background-color: black;
+    border: solid 3px rgb(255, 108, 108);
+    color: rgb(255, 108, 108);
+}
+button:hover {
+    color: #25D366;
+    border: solid 3px #25D366;
+    background-color: black;
+}
+footer {
+    color: white;
+    padding: 25px;
+    text-align: center;
+    text-shadow: black 1px 1px 1px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(255, 0, 234);
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: black 0px 0px 3px;
+}
+@media only screen and (max-width: 900px){
+    footer {
+        font-size: 13px;
+    }
+}
+footer a {
+    text-decoration: none;
+    color: rgb(91, 208, 255);
+    font-weight: bold;
+}
